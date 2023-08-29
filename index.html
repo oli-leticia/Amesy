@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Site Grêmio ETEC Hortolândia</title>
+
+        <!-- Swiper CSS
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body background="img/bgcolor.png">
+        <!-- MENU -->
+        <div class="cabecalho">
+            <nav class="menu">
+                 <!--<h1><img src="img/eu.png" width="100"/></h1>-->
+                 <ul>                
+                    <a href="index.html"><li class="ativa"> Grêmio </li></a>
+                    <li> Projetos
+                        <ul>
+                            <li>Correio 
+                            <ul>
+                            <a href="tiposCorreio.html"><li> Tipos </li></a>
+                            <a href="compraCorreio.html"><li> Compra </li></a>
+                        </ul>
+                    </li>
+                    <a href="mundoLivre.html"><li> Mundo Livre </li></a>
+                    <a href="halloween.html"><li> Halloween </li></a>
+                    <a href="carnetec.html"><li> Carnetec  </li></a>
+                    </li>
+                </ul> <!--fim item projetos-->
+                <!-- </li> -->
+                <a href="calendario/calendar.html"><li> Calendário </li></a>
+                <a href="contato.html"><li> Contato </li></a>
+                <!--</ul>-->
+                <!-- </li>-->
+            </nav> 
+        </div>
+        <!-- FINAL MENU -->
+
+        <div id="header"> 
+            <div class="titulo">
+                <h2> Membros do Grêmio </h2>
+                <p class="para" align="center"> conheça os integrantes do grêmio e suas ocupações dentro dele  </p>
+            </div>
+            
+                
+             <section class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+            
+                  <div class="card swiper-slide">
+                    <div class="card__image">
+                      <img src="img/voce.jpg">
+                    </div>
+            
+                    <div class="card__content">
+                      <span class="card__title">Web Designer</span>
+                      <span class="card__name">Victor</span>
+                      <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                      <button class="card__btn">View More</button>
+                    </div>
+                  </div>
+            
+                  <div class="card swiper-slide">
+                    <div class="card__image">
+                      <img src="img/vc.jpg" alt="card image">
+                    </div>
+            
+                    <div class="card__content">
+                      <span class="card__title">Ui Designer</span>
+                      <span class="card__name">Rebeca</span>
+                      <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                      <button class="card__btn">View More</button>
+                    </div>
+                  </div>
+            
+                  <div class="card swiper-slide">
+                    <div class="card__image">
+                      <img src="img/ela.jpg" alt="card image">
+                    </div>
+            
+                    <div class="card__content">
+                      <span class="card__title">Web Developer</span>
+                      <span class="card__name">Letícia</span>
+                      <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                      <button class="card__btn">View More</button>
+                    </div>
+                  </div>
+            
+                  <div class="card swiper-slide">
+                    <div class="card__image">
+                      <img src="img/ele.jpg" alt="card image">
+                    </div>
+            
+                    <div class="card__content">
+                      <span class="card__title">Mobile Designer</span>
+                      <span class="card__name">Ana Paula</span>
+                      <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                      <button class="card__btn">View More</button>
+                    </div>
+                  </div>
+            
+                </div>
+
+                
+              </section>
+            
+            <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  effect: "coverflow",
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: "auto",
+                  coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 300,
+                    modifier: 1,
+                    slideShadows: false,
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                  },
+                });
+              </script></header>
+    </body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBwxBWEaEkAVV3zSN-3z9zHLeBArZpQzrY",
+          authDomain: "nossotcc-f73e0.firebaseapp.com",
+          projectId: "nossotcc-f73e0",
+          storageBucket: "nossotcc-f73e0.appspot.com",
+          messagingSenderId: "222015081107",
+          appId: "1:222015081107:web:bef835ec8fff7c0aa01b66",
+          measurementId: "G-BE9NCTGGXQ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <!-- SWIPER JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+</html>

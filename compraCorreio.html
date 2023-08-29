@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com.css?family=Roboto" rel="slylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title> Compra - Correios </title>
+
+        <script>
+            function enviar()
+            {
+            alert("Correio enviado à nossa equipe!");
+            }
+        </script>
+
+    </head>
+
+    <body class="bodyCTT" background="img/bgcolor.png">
+        <div class="cabecalho">
+            <nav class="menu">
+                <ul>
+                    <a href="index.html"><li> Grêmio </li></a>
+                    <li class="ativa"> Projetos
+                        <ul>
+                            <li>Correio 
+                            <ul>
+                            <a href="tiposCorreio.html"><li> Tipos </li></a>
+                            <a href="compraCorreio.html"><li> Compra </li></a>
+                        </ul>
+                    </li>
+                    <a href="mundoLivre.html"><li> Mundo Livre </li></a>
+                    <a href="halloween.html"><li> Halloween </li></a>
+                    <a href="carnetec.html"><li> Carnetec  </li></a>
+                    </li>
+                </ul> <!--fim item projetos-->
+                <!-- </li> -->
+                <a href="calendario/calendar.html"><li> Calendário </li></a>
+                <a href="contato.html"><li> Contato </li></a>
+                <!--</ul>-->
+                <!-- </li>-->
+            </nav> 
+        </div>
+         
+        <section class="contact">
+            <div class="content">
+                <h3 class="formsH3Compra"> Compre já o seu correio  elegante! </h3>
+                <p class="formsPCompra"> Preencha o formulário para realizar a compra </p>
+            </div>
+            <div class="container">
+                
+                <div class="contactForm">
+                    <form>
+                        <h3 class="formsH3"> Mande seu correio </h3>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Seu nome Completo</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Nome Completo do destinatário</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>E-mail</span>
+                        </div>
+                        <div class="inputBox3">
+                            <div class="espacinho">                    
+                                <p class="turmaSpan">Turma</p>
+                                    <select class="turmaSpanSelect" type="text" name="Turma" required="required"> 
+                                        <option>3DSA</option>
+                                        <option>3DSB</option>
+                                        <option>3MAA</option>
+                                        <option>3MAB</option>
+                                        <option>3MN</option>
+                                        <option>2DSA</option>
+                                        <option>2DSB</option>
+                                        <option>2MAA</option>
+                                        <option>2MAB</option>
+                                        <option>2MN</option>
+                                        <option>1DSA</option>
+                                        <option>1DSB</option>
+                                        <option>1MAA</option>
+                                        <option>1MAB</option>
+                                        <option>1MN</option>
+                                    </select>
+                            </div>
+                            <div class="espacinho">         
+                                 <p class="turmaSpan">Tipo de correio</p>
+                                <select class="turmaSpanSelect" type="text" name="Turma" required="required"> 
+                                    <option>Correio de coração</option>
+                                    <option>Correio com pirulito</option>
+                                    <option>Correio simples</option>
+                                    <option>Correio com bombom</option>
+                                </select>
+                            </div>        
+                        </div>
+                        <div class="inputBox2">
+                            <p class="turmaSpan">será anônimo?</p>
+                                <div  class="divsapn">                              
+                                    <div class="opcao"><input type="radio"  name="anonimo" value="sim">
+                                        <div class="escrito"> sim </div>
+                                    </div>
+                                    <div class="opcao"><input type="radio" name="anonimo" value="não">
+                                        <div class="escrito"> não </div>
+                                    </div>
+                                </div>  
+                        </div>
+                        
+                        
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Digite sua mensagem à ser posta no correio aqui</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Enviar" onclick="enviar()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
