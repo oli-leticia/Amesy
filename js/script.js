@@ -41,6 +41,7 @@ function openFulImg(reference){
 function closeImg(){
     fulImgBox.style.display = "none";
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     var stream = document.querySelector('.gallery__stream');
     var items = document.querySelectorAll('.gallery__item');
@@ -57,4 +58,3 @@ document.addEventListener('DOMContentLoaded', function() {
       items = document.querySelectorAll('.gallery__item');
     });
   });
-
