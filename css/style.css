@@ -725,6 +725,8 @@ h2{
   display: block;
   width: 136%;
   transform: translateX(-13%);
+  padding-left: 15px;
+  padding-bottom: 1px;
 }
 
 .jao{
