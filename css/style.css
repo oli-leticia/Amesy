@@ -608,11 +608,11 @@ h2{
 .gallery {
   position: absolute;
   top: 45%;
-  width: 100%;
+  width: 101%;
   height: 80%;
   max-height: 28vw;
   overflow: hidden;
-  transform: translateX(-14%);
+  transform: translateX(-13%);
 }
 
 .gallery:before,
