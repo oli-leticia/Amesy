@@ -14,7 +14,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EFEFEF;
+    overflow-x: hidden;
+}
+
+/* scrollbar legal*/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #cb6ce6;
 }
 
 .cabecalho{
