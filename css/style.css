@@ -17,6 +17,8 @@ body{
     overflow-x: hidden;
 }
 
+.cor{ background: #f2d6f8;}
+
 /* scrollbar legal*/
 
 ::-webkit-scrollbar {
