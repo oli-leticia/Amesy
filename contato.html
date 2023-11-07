@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com.css?family=Roboto" rel="slylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel ="icon" type= "img/png" href="img/icon-amesy2.png"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="stylesheet" href="css/style.css">
+
+        <title> Contato </title>
+    </head>
+
+    <body class="bodyCTT" background="img/fundovictor.png">
+
+        <script language="javascript" type="text/javascript">
+            function validar() {
+                var nome = form.nome.value;
+                var turma = document.getElementsByName("escolhaTurma");
+                var ptGremio = form.ptGremio.value;
+                var email = form.email.value;
+                var comentario = document.getElementById("comentario").value.trim();
+    
+                if (nome === "") {
+                    alert('Por favor, preencha o campo com o seu nome');
+                    form.nome.focus();
+                    return false;
+                }
+    
+                var escolhaTurma = document.getElementById("escolhaTurma").value;
+    
+                if (escolhaTurma === "") {
+                    alert("Por favor, selecione a sua sala.");
+                    return false;
+                }
+    
+                if (ptGremio === "") {
+                    alert('Por favor, preencha a parte do grêmio que deseja falar');
+                    form.ptGremio.focus();
+                    return false;
+                }
+                
+                if (email === "") {
+                    alert('Por favor, preencha o campo com o seu e-mail');
+                    form.email.focus();
+                    return false;
+                }
+    
+                if (comentario === "") {
+                    alert("Por favor, preencha o campo de comentário.");
+                    form.comentario.focus();
+                    return false;
+                }else {
+                    var confirmacao = confirm("Deseja enviar os seguintes dados? \n Seu nome: " + nome + "\n Sua turma: "
+                     + escolhaTurma + "\n E-mail: " + email +  "\n Seu comentario: " + comentario);
+    
+                    if (confirmacao) {
+                    // Aqui você pode enviar os dados para o servidor ou realizar qualquer ação necessária
+                    alert("Dados enviados com sucesso!");
+        }
+      }
+            }
+        </script>
+        
+        <div class="cabecalho">
+          
+            <img class="logo" src="img/logoamesy.png">
+          
+            <nav class="menu">
+                 <!--<h1><img src="img/eu.png" width="100"/></h1>-->
+                 <ul>                
+                    <a href="index.html"><li> Grêmio </li></a>
+                    <li>Projetos
+                      <ul>
+                          <li>projetos escola
+                              <ul>
+                                  <li><a href="carnetec.html">carnetec</a></li>
+                                  <li>the voice etec</li>
+                                  <li><a href="halloween.html">halloween</a></li>
+                              </ul>
+                          </li>        
+                          <li>projetos gremio
+                              <ul>
+                                  <li>correio
+                                    <ul>
+                                      <li><a href="tiposCorreio.html">tipos</a></li>
+                                      <li><a href="compraCorreio.html">compra</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href="debate.html">debate</a></li>
+                                  <li><a href="mundoLivre.html">mundoLivre</a></li>
+                                  <li>desafio mat</li>
+                              </ul>
+                          </li>  
+                      </ul>
+                  </li>      <!--fim item projetos-->
+                <!-- </li> -->
+                <a href="calendario/calendar.html"><li> Calendário </li></a>
+                <a href="contato.html"><li class="ativa"> Contato </li></a>
+                <!--</ul>-->
+                <!-- </li>-->
+            </nav> 
+        </div>
+        <!-- FINAL MENU -->
+
+        <!-- começo do forms -->
+        
+        <section class="contact">
+            <div class="content">
+                <h3 class="formsH2"> Entre em contato conosco! </h3>
+                <p class="formsP"> Preencha o formulário para entrarmos em contato </p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3 class="formsH3">Endereço</h3>
+                            <p class="formsP">ETEC de Hortolândia</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="text">
+                            <h3 class="formsH3">Telefone</h3>
+                            <p class="formsP">+55 (19) 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3 class="formsH3">E-mail</h3>
+                            <p class="formsP">gremioestudantilETEC@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="img/insta.png">
+                        </div>
+                        <div class="text">
+                            <h3 class="formsH3">Instagram</h3>
+                            <p class="formsP">@abbv_etec</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="contactForm">
+                    <form name="form" method="post" onsubmit="return validar()">
+                        <h3 class="formsH2"> Mande sua questão </h3>
+                        <div class="inputBox">
+                            <input type="text" name="nome" placeholder="Seu nome completo">
+                        </div>
+                        <div class="inputBox3">
+                            <div class="espacinho">
+                                <p class="turmaSpan">Sua turma</p>
+                                <select id="escolhaTurma" name="escolhaTurma">
+                                    <option value="">Selecione sua turma</option>
+                                    <option>3DSA</option>
+                                    <option>3DSB</option>
+                                    <option>3MAA</option>
+                                    <option>3MAB</option>
+                                    <option>3MN</option>
+                                    <option>2DSA</option>
+                                    <option>2DSB</option>
+                                    <option>2MAA</option>
+                                    <option>2MAB</option>
+                                    <option>2MN</option>
+                                    <option>1DSA</option>
+                                    <option>1DSB</option>
+                                    <option>1MAA</option>
+                                    <option>1MAB</option>
+                                    <option>1MN</option>
+                                    <!-- Opções da turma aqui -->
+                                </select>
+                        
+                            </div>           
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="ptGremio" placeholder="A qual parte do grêmio é direcionada?">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="inputBox">
+                            <textarea placeholder="Digite sua mensagem" cols="45" rows="10" id="comentario" name="comentario"></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" id="formBtn" onclick="return Enviar()" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
